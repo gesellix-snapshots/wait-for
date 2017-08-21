@@ -9,4 +9,3 @@ RUN apk add --no-cache curl
 ENTRYPOINT ["/wait-for"]
 CMD ["--help"]
 COPY --from=test-env /app/wait-for /wait-for
-#COPY ./wait-for /wait-for
